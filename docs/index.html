@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mutewise: Notification Manager for Android</title>
+<meta name="description" content="About Mutewise, a free Android notification manager: mute group chats, block promos, snooze apps, and set a notification alarm with rules you test first.">
+<meta name="theme-color" content="#F4F1EA">
+<meta property="og:title" content="Mutewise: Notification Manager">
+<meta property="og:description" content="Hear the alerts that matter. Mute the rest.">
+<meta property="og:image" content="https://nookeshkarri7.github.io/mutewise/assets/og.png">
+<link rel="icon" href="assets/icon.png" type="image/png">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root { --ground:#F4F1EA; --raised:#fff; --line:#DDD7CA; --ink:#1B1F2A; --muted:#5A6070; --accent:#C2410C; --on-accent:#fff; color-scheme: light; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ground:#14161B; --raised:#1D2027; --line:#2E323B; --ink:#ECE9E2; --muted:#A3A8B4; --accent:#F08C4A; --on-accent:#14161B; color-scheme: dark; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--ground); color: var(--ink); font: 18px/1.55 "IBM Plex Sans", system-ui, sans-serif; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 32px 16px 64px; }
+  header { display: flex; align-items: center; gap: 12px; }
+  header img { width: 40px; height: 40px; border-radius: 10px; }
+  header b { font: 800 24px/1 "Bricolage Grotesque", sans-serif; }
+  h1 { font: 800 clamp(36px, 6vw, 60px)/1.04 "Bricolage Grotesque", sans-serif; margin: 40px 0 16px; max-width: 14ch; }
+  p.lede { color: var(--muted); font-size: 20px; max-width: 40ch; }
+  .btn { display: inline-block; background: var(--accent); color: var(--on-accent); padding: 16px 24px; border-radius: 14px; font-weight: 600; text-decoration: none; margin: 8px 0 32px; }
+  .shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; }
+  .shots img { width: 100%; height: auto; border-radius: 18px; border: 8px solid #11131A; }
+  h2 { font: 800 30px/1.1 "Bricolage Grotesque", sans-serif; margin: 56px 0 12px; }
+  ul { padding-left: 1.2rem; } li { margin: 6px 0; }
+  .video { position: relative; width: min(320px, 86vw); aspect-ratio: 9/16; border-radius: 24px; overflow: hidden; background: #11131A; }
+  .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  footer { margin-top: 56px; border-top: 1px solid var(--line); padding-top: 20px; color: var(--muted); font-size: 15px; }
+  footer a { color: inherit; margin-right: 16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><img src="assets/icon.png" alt="" width="40" height="40"><b>Mutewise</b></header>
+  <h1>Hear the alerts that matter. Mute the rest.</h1>
+  <p class="lede">Mutewise is a free notification manager for Android. Write rules in plain sentences, test them on your recent notifications, and let them run in the background.</p>
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.mutewiseapp.mutewise&amp;utm_source=github&amp;utm_medium=pages">Get it on Google Play</a>
+
+  <div class="shots">
+    <img src="assets/rules.webp" alt="Your rules with on/off faders" width="540" height="960">
+    <img src="assets/editor.webp" alt="Rule editor written as a sentence" width="540" height="960">
+    <img src="assets/history.webp" alt="Notification history" width="540" height="960">
+    <img src="assets/health.webp" alt="Health checks" width="540" height="960">
+  </div>
+
+  <h2>What you can do with it</h2>
+  <ul>
+    <li>Give a busy group chat one buzz per burst with Cooldown.</li>
+    <li>Swipe away promos for you, or snooze shopping apps until 7 pm.</li>
+    <li>Ring an alarm, even on silent, when a doorbell camera sees a person.</li>
+    <li>Hide what private messages say, give one contact its own vibration, auto-reply or tap "Mark as read".</li>
+    <li>See every notification in History and restore anything a rule removed.</li>
+    <li>Check notification access and battery settings on the Health screen, so rules keep working.</li>
+  </ul>
+  <p>Notifications are read on your phone and never leave it. There is no account. Mutewise is free and supported by ads, with no banner ads.</p>
+
+  <h2>See it in 25 seconds</h2>
+  <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/9ad06K-ur_o" title="Mutewise teaser" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+
+  <footer>
+    <a href="https://mutewise.pages.dev/">Website</a>
+    <a href="https://mutewise.pages.dev/privacy/">Privacy policy</a>
+    <a href="mailto:anithabheesetty@gmail.com">Support</a>
+    <a href="https://play.google.com/store/apps/developer?id=NK+Tools">More apps</a>
+    <p>© 2026 NK Tools</p>
+  </footer>
+</div>
+</body>
+</html>
